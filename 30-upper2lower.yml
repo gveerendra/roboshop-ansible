@@ -1,0 +1,10 @@
+---
+ - name: case change
+   connection: local
+   hosts: local
+   vars:
+    target: linux, python
+   tasks:
+   - name: chang cases
+     ansible.builtin.debug:
+      msg: "{{ target | upper }}" 
