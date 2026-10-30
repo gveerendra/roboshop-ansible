@@ -2,6 +2,7 @@
  - name: check errors
    hosts: local
    connection: local
+   become: yes
    tasks: 
    - name: check user or not
      ansible.builtin.command: "id roboshop"
