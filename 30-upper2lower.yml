@@ -6,6 +6,7 @@
     target: linux, python
     course: "devops with ansible"
     course2: "THIS IS PYTHON COURCE"
+    myIP: 
    tasks:
    - name: chang cases
      ansible.builtin.debug:
@@ -13,3 +14,6 @@
    - name: lower case
      ansible.builtin.debug:
       msg: "{{ course2 | lower }}"   
+   - name: check IP address
+     ansible.builtin.debug:
+      msg: "{{ myIP | ansible.utils.ipv4 }}"   
