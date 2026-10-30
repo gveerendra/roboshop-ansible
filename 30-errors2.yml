@@ -6,6 +6,7 @@
    - name: check user not
      ansible.builtin.command: id roboshop
      register: user_ouput
+     ignore_errors: true
 
    - name: print user_output
      ansible.builtin.debug:
