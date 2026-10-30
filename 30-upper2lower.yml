@@ -5,7 +5,11 @@
    vars:
     target: linux, python
     course: "devops with ansible"
+    course2: "THIS IS PYTHON COURCE"
    tasks:
    - name: chang cases
      ansible.builtin.debug:
       msg: "{{ course | upper }}" 
+   - name: lower case
+     ansible.builtin.debug:
+      msg: "{{ course2 | lower }}"   
