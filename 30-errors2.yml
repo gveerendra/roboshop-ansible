@@ -6,3 +6,8 @@
    - name: check user not
      ansible.builtin.command: id roboshop
      register: user_ouput
+
+   - name: print user_output
+     ansible.builtin.debug:
+      msg: "{{user_output }}"
+    
