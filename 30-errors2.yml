@@ -5,4 +5,4 @@
    tasks:
    - name: check user not
      ansible.builtin.command: id roboshop
-     
+     register: user_ouput
