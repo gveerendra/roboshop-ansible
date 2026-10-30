@@ -5,7 +5,7 @@
    tasks:
    - name: check user not
      ansible.builtin.command: id roboshop
-     register: user_ouput
+     register: user_output
      ignore_errors: true
 
    - name: print user_output
