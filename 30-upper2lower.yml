@@ -4,7 +4,8 @@
    hosts: local
    vars:
     target: linux, python
+    course: "devops with ansible"
    tasks:
    - name: chang cases
      ansible.builtin.debug:
-      msg: "{{ target | upper }}" 
+      msg: "{{ course | upper }}" 
