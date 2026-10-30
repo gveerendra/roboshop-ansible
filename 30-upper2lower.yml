@@ -6,7 +6,7 @@
     target: linux, python
     course: "devops with ansible"
     course2: "THIS IS PYTHON COURCE"
-    myIP: 
+    myIP: "172-31-23-35"
    tasks:
    - name: chang cases
      ansible.builtin.debug:
