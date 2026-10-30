@@ -1,0 +1,8 @@
+---
+ - name: error handling
+   connection: local
+   hosts: local
+   tasks:
+   - name: check user not
+     ansible.builtin.command: id roboshop
+     
