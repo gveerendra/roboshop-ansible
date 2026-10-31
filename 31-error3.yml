@@ -1,0 +1,8 @@
+---
+ - name: check the errors
+   hosts: local
+   connection: local
+   tasks:
+   - name: check user or not
+     ansible.builtin.command: IP roboshop
+     register: user_output
