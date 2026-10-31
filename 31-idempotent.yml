@@ -2,6 +2,7 @@
  - name: check idempotent
    connection: local
    hosts: local
+   become: true
    tasks:
    - name: create user
      ansible.builtin.user:
