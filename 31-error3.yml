@@ -6,3 +6,7 @@
    - name: check user or not
      ansible.builtin.command: IP roboshop
      register: user_output
+
+   - name: print user
+     ansible.builtin.debug:
+      msg: "{{ user_output }}"
