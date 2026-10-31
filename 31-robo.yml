@@ -25,5 +25,6 @@
    - name: print the output  
      ansible.builtin.debug:
       msg: "{{ ec2-output }}"
+      print the 
      
   
