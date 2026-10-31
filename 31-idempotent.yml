@@ -1,0 +1,8 @@
+---
+ - name: check idempotent
+   connection: local
+   hosts: local
+   tasks:
+   - name: create user
+     ansible.builtin.user:
+     name: veeru
